@@ -12,6 +12,6 @@ for (let i = 0; i < 10; i++) {
  myPromise.then((value) => {
      console.log('ID' + ' ' + value);
  }, (value) => {
-     console.log("greska" + " " + value);
+     console.log("Error" + " " + value);
  });
 }
