@@ -10,7 +10,7 @@ const generateTitle = function () {
 const generateLead = function () {
     return loremIpsum({
         units: "sentences",
-        count: 2
+        count: 4
     })
 }
 const generatePosts = function (num) {

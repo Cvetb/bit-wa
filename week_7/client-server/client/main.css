@@ -1,0 +1,20 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 48px;
+}
+
+.row{
+    width: 70%;
+    margin-bottom: 0;
+}
+
+#main{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
