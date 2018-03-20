@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Header from './partials/header.js';
+import Header2 from './partials/header2.js';
 import UserList from './users/userList';
 import Footer from './partials/footer.js';
 import {userService} from '../services/UserService';
-import User from '../entities/User';
 
 class App extends Component {
 constructor(props){
@@ -23,7 +23,7 @@ componentDidMount(){
   render() {
     return (
       <div className="App">
-        <Header title="React Users"/>
+        <Header2 title="Bit Persons"/>
         <div className="container">
         <UserList items={this.state.users}/>
         </div>

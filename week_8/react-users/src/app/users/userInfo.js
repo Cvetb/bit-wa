@@ -5,12 +5,12 @@ const UserItem = (props) => {
     return (
         
             <ul className="collection">
-                <li className="collection-item avatar">
+                <li className="collection-item avatar red lighten-5">
             <img className="circle" alt="" src={props.user.photo}/>
 
             <p>{props.user.name}</p>
-            <p><i className="material-icons">email</i> email: {props.user.email}</p>
-            <p><i className="material-icons">cake</i> {props.user.date}</p>
+            <p><i className="material-icons">email</i> email: {props.user.getEmail()}</p>
+            <p><i className="material-icons">cake</i>  {props.user.getDate()}</p>
                 </li>
             </ul>
         

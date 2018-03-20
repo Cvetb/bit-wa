@@ -1,7 +1,3 @@
-/*import {
-    hidden,
-    getDate
-} from "../shared/utility/util"*/
 class User {
     constructor(user) {
         this.name = `${user.name.first} ${user.name.last}`;
@@ -9,20 +5,25 @@ class User {
         this.date = user.dob;
         this.photo = user.picture.large;
 
-        /*this.email =() => {
-            const spl = user.email.indexOf('@');
-            const string = user.email.substring(0, spl) + '...';
-            return string;
-        };
-        this.date = () => {
-            const date = new Date(user.dob);
-            const year = date.getFullYear();
-            const month = date.getMonth();
-            const day = date.getDate();
+    }
 
-            return `${year}-${month}-${day}`;
+    getEmail(email) {
+        const end = (this.email.split("@")[1]);
+        const start = `${this.email.substring(0,3)}`;
+        const mid = `${(this.email.split("@")[0]).substr(-3)}`;
+        const hidden = `${start}...${mid}@${end}`;
+        return hidden;
 
-        }*/
+    }
+    getDate(date) {
+        const dob = new Date(this.date);
+        const year = dob.getFullYear();
+        const month = dob.getMonth()+1;
+        const day = dob.getDate();
+
+        return `${day}-${month}-${year}`;
+
+
     }
 }
 
