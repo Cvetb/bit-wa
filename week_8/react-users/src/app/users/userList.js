@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import usersData from '../users.js';
-import User from './user.js';
+import UserItem from './userInfo.js';
+import UserItem2 from './userCard.js';
 
 
 const UserList = (props) => {
     return (
         
-            <div className="container">
-            {props.items.map((item, i)=> <User key={i} item={item}/>)}   
+            <div className="row">
+            {props.items.map((item, i)=> <UserItem2 key={i} user={item}/>)}   
         </div>
 
         
