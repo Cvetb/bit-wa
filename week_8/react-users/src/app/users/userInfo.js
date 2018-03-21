@@ -1,5 +1,5 @@
 import React from 'react';
-import './userInfo.css';
+
 
 const UserItem = (props) => {
     const bgStyle = {
