@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import {userService} from '../../services/UserService';
+import React from 'react';
 
 const UserItem2 = (props) => {
     return (
         <div >
         <div className="col s12 m4">
-          <div className="card red lighten-5">
+          <div className={"card " + props.user.gender}>
+          
             <div className="card-image">
               <img alt='' src={props.user.photo}/>
               <span className="card-title">{props.user.name}</span>

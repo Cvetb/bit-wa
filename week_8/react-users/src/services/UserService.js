@@ -14,7 +14,6 @@ class UserService {
                 return userFromApi.map((user) => {
                     return new User(user);
                 })
-
             })
     }
 }
