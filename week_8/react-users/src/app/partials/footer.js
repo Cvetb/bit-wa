@@ -6,6 +6,7 @@ const Footer = (props) => {
         <div className = "footer-copyright">
             <div className = "container">
             <p>© 2018 Copyright BIT</p>
+            <p>{props.timeVisit}</p>
             </div>
             </div>
             </footer>

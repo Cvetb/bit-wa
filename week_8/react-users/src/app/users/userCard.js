@@ -8,7 +8,7 @@ const UserCard = (props) => {
           
             <div className="card-image">
               <img alt='' src={props.user.photo}/>
-              <span className="card-title">{props.user.name}</span>
+              <span className="card-title">{props.user.upper()}</span>
             </div>
             <div className="card-content">
               <p>{props.user.getEmail()}</p>

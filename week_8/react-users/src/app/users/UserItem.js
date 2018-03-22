@@ -12,7 +12,7 @@ const UserItem = (props) => {
         <ul className="collection-item avatar" style={bgStyle} >
             <li>
                 <img className="circle" alt="" src={props.user.photo}/>
-                <p>{props.user.name}</p>
+                <p>{props.user.upper()}</p>
                 <p><i className="material-icons">email</i> email: {props.user.getEmail()}</p>
                 <p><i className="material-icons">cake</i>{props.user.getDate()}</p>
             </li>

@@ -8,7 +8,7 @@ class User {
 
     }
 
-    getEmail(email) {
+    getEmail() {
         const end = (this.email.split("@")[1]);
         const start = `${this.email.substring(0,3)}`;
         const mid = `${(this.email.split("@")[0]).substr(-3)}`;
@@ -24,6 +24,11 @@ class User {
         const day = dob.getDate();
 
         return `${day+1}.${month+1}.${year}`;
+    }
+    upper(){
+        const first = (this.name.split(" ")[0]);
+        const last = (this.name.split(" ")[1]);
+        return `${first.charAt(0).toUpperCase() + first.slice(1)} ${last.charAt(0).toUpperCase() + last.slice(1)}`
     }
 }
 
