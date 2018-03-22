@@ -1,5 +1,5 @@
 import React from 'react';
-import UserItem from './userInfo.js';
+import UserItem from './UserItem';
 
 const UserList = (props) => {
     return (

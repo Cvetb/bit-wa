@@ -14,3 +14,4 @@ const Load  = (props) => {
   <div className="sk-cube sk-cube9"></div>
 </div>
     )}
+    export default Load;

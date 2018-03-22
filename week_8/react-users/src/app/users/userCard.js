@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UserItem2 = (props) => {
+const UserCard = (props) => {
     return (
         <div >
         <div className="col s12 m4">
@@ -22,4 +22,4 @@ const UserItem2 = (props) => {
     )
 }
 
-export default UserItem2; 
+export default UserCard; 
