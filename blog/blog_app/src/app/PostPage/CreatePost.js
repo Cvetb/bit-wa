@@ -1,28 +1,40 @@
 import React from 'react';
 import Header from '../Partials/Header';
 import Footer from '../Partials/Footer';
-
+import { Link } from 'react-router-dom';
 const CreatePost = (props) => {
     return (
         <div>
         <Header/>
-        <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="input_text" type="text" />
-            <label for="input_text">Input text</label>
-          </div>
+        <div className="row">
+        <br/>
+        <br/>
+        <br/>
+        <h5 className="center">NEW POST</h5>
+      <form className="col s12">
+        
+  <div className="row">
+  <br/>
+  <div className="input-field col s8 offset-s2">
+    <input value="" id="first_name2" type="text" />
+    <label className="active" for="first_name2">Title</label>
         </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <textarea id="textarea2" class="materialize-textarea"></textarea>
-            <label for="textarea2">Textarea</label>
-          </div>
+        </div>
+        <div className="row">
+  <div className="input-field col s8 offset-s2">
+    <input value="" id="first_name2" type="text"/>
+    <label className="active" for="first_name2">Content</label>
+        </div>
+        <Link to="/" class="waves-effect orange darken-3 btn col s1 offset-s7">Cancel</Link>
+      <Link to="/" class="waves-effect orange darken-3 btn col s1 offset-s1">Save</Link>
         </div>
       </form>
     </div>
-
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
       <Footer/>
       </div>
     )}

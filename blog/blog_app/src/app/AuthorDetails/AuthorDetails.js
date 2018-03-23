@@ -11,7 +11,8 @@ const AuthorDetails = (props) => {
         <div>
             <Header />
             <div className="container">
-            <Link to="/authors" class="waves-effect deep-purple accent-3 btn"><i class="material-icons left">chevron_left</i>Back</Link>
+            <br/>
+            <Link to="/authors" class="waves-effect orange darken-3 btn"><i class="material-icons left">chevron_left</i>Back</Link>
             </div>
             <AuthorInfo />
             <AuthorAddress />

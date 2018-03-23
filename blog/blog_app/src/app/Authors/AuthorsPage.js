@@ -9,36 +9,14 @@ const Author = (props) => {
         <div class="row">
         <h3 className="center">Authors(4)</h3>
         <div class="col s12 m8 offset-m2">
-            <ul class="collection">
-                <li class="collection-item avatar">
-                 <i class="material-icons circle">face</i>
-                <Link to="/author" class="title">Title</Link>
-                <p>First Line <br/>
-                Second Line
-                </p>
-            </li>
-                <li class="collection-item avatar">
-                <i class="material-icons circle">face</i>
-                <p class="title">Title</p>
-                <p>First Line <br/>
-                Second Line
-                </p>
-            </li>
-                <li class="collection-item avatar">
-                <i class="material-icons circle">face</i>
-                <p class="title">Title</p>
-                <p>First Line <br/>
-                Second Line
-                </p>
-            </li>
-                <li class="collection-item avatar">
-                <i class="material-icons circle">face</i>
-                <p class="title">Title</p>
-                <p>First Line <br/>
-                Second Line
-                </p>
-            </li>
-            </ul>
+      
+            <div class="collection">
+            <Link to="/author" class="collection-item blue-grey-text text-darken-4"><i class="medium material-icons circle orange-text text-darken-3">account_circle</i><h5>Name Surname</h5></Link>
+            <Link to="/author" class="collection-item blue-grey-text text-darken-4"><i class="medium material-icons circle orange-text text-darken-3">account_circle</i><h5>Name Surname</h5></Link>
+            <Link to="/author" class="collection-item blue-grey-text text-darken-4"><i class="medium material-icons circle orange-text text-darken-3">account_circle</i><h5>Name Surname</h5></Link>
+            <Link to="/author" class="collection-item blue-grey-text text-darken-4"><i class="medium material-icons circle orange-text text-darken-3">account_circle</i><h5>Name Surname</h5></Link>
+          </div>
+               
       </div>
       </div>
       <Footer/>

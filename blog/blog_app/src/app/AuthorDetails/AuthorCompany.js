@@ -6,7 +6,7 @@ const AuthorCompany = (props) => {
         <div className="container">
         <div className="collection">
         <div class="collection-item">
-        <span class="title">Company</span>
+        <h5 class="title">Company</h5>
         <p>name: BIT <br/>
            slogan: uciti i samo uciti
         </p>

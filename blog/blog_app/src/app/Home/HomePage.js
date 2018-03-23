@@ -9,7 +9,7 @@ class Home extends Component {
     return (
       <div>
           <Header/>
-          <h3 className="center">POSTS</h3>
+          <h3 className="center blue-grey-text text-darken-4">POSTS</h3>
           <BlogItem/>
           <BlogItem/>
           <BlogItem/>
