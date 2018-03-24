@@ -1,19 +1,40 @@
 import React, { Component } from 'react';
 import Header from '../Partials/Header';
 import Footer from '../Partials/Footer';
-import BlogItem from './BlogItem';
+import BlogList from './BlogList';
+import {postService} from '../../services/PostServices'
 
 class Home extends Component {
-  
+  constructor(props) {
+		super(props);
+
+		this.state = {
+      posts: [], 
+      showPost: true
+    }
+    }
+
+    componentDidMount() {
+      this.fetchPosts();
+    }
+
+    fetchPosts = () => {
+      postService.fetchPost()
+        .then(postData => {
+          this.setState({
+            posts: postData
+          })
+        })
+    }
+
   render() {
     return (
       <div>
-          <Header/>
-          <h3 className="center blue-grey-text text-darken-4">POSTS</h3>
-          <BlogItem/>
-          <BlogItem/>
-          <BlogItem/>
-          <BlogItem/>
+          <Header title="BCblog"/>
+          <h4 className="center blue-grey-text text-darken-4">POSTS</h4>
+
+         <BlogList items={this.state.posts}/>
+        
           <Footer/>
       </div>
     );

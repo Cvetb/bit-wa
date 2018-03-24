@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
      return (
     <nav className="blue-grey darken-4">
     <div className="container nav-wrapper blue-grey darken-4">
-      <Link to='/' className="brand-logo">Blog</Link>
+      <Link to='/' className="brand-logo">{props.title}</Link>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/authors'>Authors</Link></li>

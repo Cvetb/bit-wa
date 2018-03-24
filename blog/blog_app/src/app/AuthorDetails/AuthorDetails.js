@@ -12,7 +12,8 @@ const AuthorDetails = (props) => {
             <Header />
             <div className="container">
             <br/>
-            <Link to="/authors" class="waves-effect orange darken-3 btn"><i class="material-icons left">chevron_left</i>Back</Link>
+            <Link to="/authors" className="waves-effect orange darken-3 btn"><i className="material-icons left">chevron_left</i>Back</Link>
+            <h3 className="center">Single Author</h3>
             </div>
             <AuthorInfo />
             <AuthorAddress />

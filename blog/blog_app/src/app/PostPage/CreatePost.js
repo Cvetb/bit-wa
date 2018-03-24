@@ -17,13 +17,13 @@ const CreatePost = (props) => {
   <br/>
   <div className="input-field col s8 offset-s2">
     <input value="" id="first_name2" type="text" />
-    <label className="active" for="first_name2">Title</label>
+    <label className="active" >Title</label>
         </div>
         </div>
         <div className="row">
   <div className="input-field col s8 offset-s2">
     <input value="" id="first_name2" type="text"/>
-    <label className="active" for="first_name2">Content</label>
+    <label className="active" >Content</label>
         </div>
         <Link to="/" class="waves-effect orange darken-3 btn col s1 offset-s7">Cancel</Link>
       <Link to="/" class="waves-effect orange darken-3 btn col s1 offset-s1">Save</Link>

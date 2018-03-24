@@ -5,8 +5,8 @@ const AuthorCompany = (props) => {
     return (
         <div className="container">
         <div className="collection">
-        <div class="collection-item">
-        <h5 class="title">Company</h5>
+        <div className="collection-item">
+        <h5 className="title">Company</h5>
         <p>name: BIT <br/>
            slogan: uciti i samo uciti
         </p>
