@@ -14,6 +14,15 @@ class AuthorService {
         })
         
     }
+
+    fetchSingleAuthor(id){
+        return fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+        .then((response) => response.json())
+        .then((singleAuthor) => {
+            return new Author(singleAuthor);
+        })
+        
+    }
 }
 
 export const authorService = new AuthorService()

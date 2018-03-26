@@ -1,7 +1,8 @@
 const url={
-    postsURL:"https://jsonplaceholder.typicode.com/posts/",//svi postovi
-    authorPostURL:"https://jsonplaceholder.typicode.com/posts?userId=", //svi postovi od jednog autora
-    authorsURL:"https://jsonplaceholder.typicode.com/users/"//svi autori
-}
+    postsURL:"https://jsonplaceholder.typicode.com/posts/",
+    postURL:"https://jsonplaceholder.typicode.com/posts/1",
+
+    authorPostURL:"https://jsonplaceholder.typicode.com/posts?userId=", 
+    authorsURL:"https://jsonplaceholder.typicode.com/users/",}
 
 export { url }

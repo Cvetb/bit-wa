@@ -7,8 +7,8 @@ const AuthorCompany = (props) => {
         <div className="collection">
         <div className="collection-item">
         <h5 className="title">Company</h5>
-        <p>name: BIT <br/>
-           slogan: uciti i samo uciti
+        <p>name: <b>{props.singleAuthor.company.name}</b> <br/>
+           slogan: <b>{props.singleAuthor.company.slogan}</b>
         </p>
       </div>
       </div>
