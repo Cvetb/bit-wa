@@ -1,13 +1,10 @@
 class AddNewPost {
-    add = post =>{
-        return fetch("http://localhost:3000/posts", {
-        lead: JSON.stringify(post),
-        headers: {
-            "content-type":"application/json"
-        
-        }, 
-        method: "POST"
-   }).then(response => response.json());
-};
+    add = post => {
+        return fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            body: JSON.stringify(post)
+        }).then(response => response.json());
+    };
 }
+
 export const addNewPost = new AddNewPost();

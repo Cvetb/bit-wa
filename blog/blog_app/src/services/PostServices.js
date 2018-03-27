@@ -18,6 +18,7 @@ class PostService {
 
 
     }
+    
     fetchSinglePost(id) {
         return fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
             .then((response) => response.json())
