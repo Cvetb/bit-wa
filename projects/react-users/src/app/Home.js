@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UserList from './users/UserList';
+import UserList from './users/userList';
 import UserGrid from './users/userGrid';
 import '../App.css';
 import Header from './partials/header';

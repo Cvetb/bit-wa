@@ -60,7 +60,7 @@ const createCast = (name) => {
 }
 
 const adaptCasts = (allCasts) => {
-    const castObjects = allCasts.map(cast => {
+    const castObjects = allCasts.slice(0, 15).map(cast => {
         return createCast(cast.person.name);
     });
     return castObjects;

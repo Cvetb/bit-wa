@@ -14,7 +14,6 @@ export const displayMainPage = (shows) => {
         $("#main").append(element);
     })
 }
-
 export const displaySingleShow = (show) => {
     const showName = show.name;
     const showImage = show.imageUrl;
@@ -23,16 +22,16 @@ export const displaySingleShow = (show) => {
     const castList = show.cast;
     const seasons = show.seasons;
 
-    let seasonNumber = 0;
+    
     const element = `
         <div class="col-lg-12">
-            <h1 class="text-center col-lg-12">${showName}</h1>
+            <h2 id="title" class="text-center col-lg-12">${showName}</h2>
             <div class="row">
             <div class="col-lg-6">
             <img src= "${showImage}">
             </div>
             <div class="col-lg-6">
-            <h4>Seasons (${seasonNumber})</h4>
+            <h4>Seasons (${seasons.length})</h4>
             <ul id="seasonList"> </ul>
             <h4>Cast</h4>
             <ul id="castList">
@@ -47,7 +46,7 @@ export const displaySingleShow = (show) => {
         </div>`
 
     $("#singleShow").append(element);
-    $("#seasonNumber").append(seasonNumber);
+    
     seasons.forEach(season => {
         let premierDate = season.start;
         let endDate = season.end;
@@ -57,7 +56,7 @@ export const displaySingleShow = (show) => {
             </li>`
 
         $("#seasonList").append(seasonList);
-        seasonNumber++;
+        
         
     });
 
