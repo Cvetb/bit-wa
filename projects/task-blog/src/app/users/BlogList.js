@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import BlogItem from './BlogItem';
-import postsData from '../Post.js';
+
 
 const BlogList = (props) => {
     return (

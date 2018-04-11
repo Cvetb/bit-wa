@@ -35,6 +35,8 @@ class Post extends Component {
         <Header />
         <div className="container">
           <br />
+          <br />
+          <br />
           <div className="row">
             <div className="col s12 m12">
               <div className="card">
@@ -50,6 +52,9 @@ class Post extends Component {
             </div>
           </div>
         </div>
+        <br />
+        <br />
+        <br />
         <Footer />
       </div>
     )

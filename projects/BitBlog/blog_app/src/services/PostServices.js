@@ -10,7 +10,6 @@ class PostService {
             .then((responsePosts) => {
                 const myPosts = responsePosts;
                 return myPosts.map((post) => {
-                    console.log(post);
                     
                     return new Post(post)
                 })
@@ -23,7 +22,6 @@ class PostService {
         return fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
             .then((response) => response.json())
             .then((singlePost) => {
-                console.log(singlePost);
                 
                 return new Post(singlePost)
             })
